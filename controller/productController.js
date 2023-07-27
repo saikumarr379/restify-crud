@@ -17,10 +17,10 @@ function projection(req, res) {
 function field(req, res) {
     const user = productTable.find()
     user.then((user) => {
-        res.send(user)
-    }).catch((e) => {
-        res.status(404).send(e)
-    })
+        res.send(user)})
+    // }).catch((e) => {
+    //     res.status(404).send(e)
+    // })
 }
 module.exports = {
     projection,
