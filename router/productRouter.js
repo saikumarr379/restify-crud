@@ -12,7 +12,7 @@ restify.serve(router, productTable , {preMiddleware: auth})
 
 
 
-router.get('/products',productController.projection)
-router.get('/products/:id{$fields}', productController.field)
+// router.get('/products',productController.projection)
+// router.get('/products/:id{$fields}', productController.field)
 
 module.exports = router
